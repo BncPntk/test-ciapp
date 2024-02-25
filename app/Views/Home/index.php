@@ -1,3 +1,9 @@
-<?= $this->include('header') ?>
+<?= $this->extend('layouts/default') ?>
+<?= $this->section('title') ?>Home<?= $this->endSection() ?>
+<?= $this->section('children') ?>
 
-<h1>Home</h1>
+<h2>Home</h2>
+
+<h2><a href="<?= site_url('/users') ?>">Users</a></h2>
+
+<?= $this->endSection() ?>
