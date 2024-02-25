@@ -3,21 +3,12 @@
 <?= $this->section('children') ?>
 
 <p><a href="<?= site_url('/users') ?>">Back</a></p>
-<table>
-    <tr>
-        <th>Id</th>
-        <th>Username</th>
-        <th>First Number</th>
-        <th>Second Number</th>
-        <th>Sum</th>
-    </tr>
-    <tr>
-        <td><?= $user['id'] ?></td>
-        <td><?= $user['username'] ?></td>
-        <td><?= $user['first_number'] ?></td>
-        <td><?= $user['second_number'] ?></td>
-        <td><?= $user['summ'] ?></td>
-    </tr>
-</table>
+
+<div>
+    <h1>Welcome, <?= esc($user['username']) ?></h1>
+    <h3>First Number: <?= $user['first_number'] ?></h3>
+    <h3>Second Number: <?= $user['second_number'] ?></h3>
+    <h3>Sum: <?= $user['summ'] ?></h3>
+</div>
 
 <?= $this->endSection() ?>

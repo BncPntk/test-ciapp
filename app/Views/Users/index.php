@@ -2,7 +2,9 @@
 <?= $this->section('title') ?>Users<?= $this->endSection() ?>
 <?= $this->section('children') ?>
 
-<h1>All Recorded Users Data</h1>
+<?= $this->include('Users/new') ?>
+
+<h1>Data of all registered users</h1>
 
 <table>
     <tr>
@@ -17,7 +19,7 @@
 
         <tr>
             <td><?= $user['id'] ?></td>
-            <td><a href="<?= site_url('/users/' . $user['id']) ?>"><?= $user['username'] ?></a></td>
+            <td><a href="<?= site_url('/users/' . $user['id']) ?>"><?= esc($user['username']) ?></a></td>
             <td><?= $user['first_number'] ?></td>
             <td><?= $user['second_number'] ?></td>
             <td><?= $user['summ'] ?></td>

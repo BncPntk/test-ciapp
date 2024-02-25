@@ -8,3 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/users', 'Users::index');
 $routes->get('users/(:num)', 'Users::show/$1');
+$routes->post('users/create', 'Users::create');
