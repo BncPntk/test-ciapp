@@ -22,7 +22,7 @@
             <td><a href="<?= site_url('/users/' . $user['id']) ?>"><?= esc($user['username']) ?></a></td>
             <td><?= $user['first_number'] ?></td>
             <td><?= $user['second_number'] ?></td>
-            <td><?= $user['summ'] ?></td>
+            <td><?= $user['sum'] ?></td>
         </tr>
 
     <?php endforeach ?>

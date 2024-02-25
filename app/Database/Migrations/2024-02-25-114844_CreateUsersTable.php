@@ -27,7 +27,7 @@ class CreateUsersTable extends Migration
                 'type' => 'INT',
                 'null' => false,
             ],
-            'summ' => [
+            'sum' => [
                 'type' => 'INT',
                 'null' => false,
             ],

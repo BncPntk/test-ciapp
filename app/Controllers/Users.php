@@ -40,7 +40,7 @@ class Users extends BaseController
             'username' => $username,
             'first_number' => $firstNumber,
             'second_number' => $secondNumber,
-            'summ' => $sum
+            'sum' => $sum
         ];
 
         $id = $this->model->insert($newUser);

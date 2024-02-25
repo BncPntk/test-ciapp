@@ -8,7 +8,7 @@ class UsersModel extends Model
 {
     protected $table = 'users';
 
-    protected $allowedFields = ['username', 'first_number', 'second_number', 'summ'];
+    protected $allowedFields = ['username', 'first_number', 'second_number', 'sum'];
 
     protected $validationRules = [
         'username' => 'required|max_length[30]|is_unique[users.username]',
