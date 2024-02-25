@@ -52,6 +52,19 @@ class Users extends BaseController
         return redirect()->to("users/$id");
     }
 
+    public function delete($id)
+    {
+        $user = $this->getUserNotFound($id);
+
+        if ($this->request->is('post')) {
+            $this->model->delete($id);
+
+            return redirect()->to('users')->with('message', 'User deleted');
+        }
+
+        return view('Users/delete', ['user' => $user]);
+    }
+
     private function getUserNotFound($id): array
     {
         $user = $this->model->find($id);

@@ -11,4 +11,6 @@
     <h3>Sum: <?= $user['sum'] ?></h3>
 </div>
 
+<p><a href="<?= url_to('Users::delete', $user['id']) ?>">Delete</a></p>
+
 <?= $this->endSection() ?>

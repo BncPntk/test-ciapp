@@ -2,9 +2,14 @@
 <?= $this->section('title') ?>Users<?= $this->endSection() ?>
 <?= $this->section('children') ?>
 
+<?php if (session()->has('message')) : ?>
+    <p style="color: lightgreen;"><b><?= session('message') ?></b></p>
+<?php endif ?>
+
 <?= $this->include('Users/new') ?>
 
 <h1>Data of all registered users</h1>
+
 
 <table>
     <tr>
